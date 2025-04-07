@@ -19,6 +19,8 @@ uv add "configfacets-mcp"
 
 Initialize your MCP server
 
+coreconcepts.py
+
 ```
 from configfacets.server import ConfigfacetsMCP
 
@@ -36,4 +38,20 @@ mcp_server.run()
 ```
 uv build
 uv publish
+```
+
+```
+{
+    "mcpServers": {
+        "configfacets": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "<absolute path>/coreconcepts_mcp",
+                "run",
+                "coreconcepts.py"
+            ]
+        }
+    }
+}
 ```
